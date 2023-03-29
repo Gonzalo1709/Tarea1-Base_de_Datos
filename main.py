@@ -45,6 +45,10 @@ print("La placa con más autos es: ", end="")
 print(int(df['PLACA'].value_counts().idxmax()))
 print("La cantidad de veces que se repite es: ", end="")
 print(df['PLACA'].value_counts().max())
+print("La placa con la segunda mayor cantidad de autos es: ", end="")
+print(int(df['PLACA'].value_counts().index[1]))
+print("La cantidad de veces que se repite es: ", end="")
+print(df['PLACA'].value_counts()[int(df['PLACA'].value_counts().index[1])])
 
 # Pregunta 4:
 print("Pregunta 4: ")
